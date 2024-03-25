@@ -8,14 +8,12 @@
 2. Create a `.env` using a copy of existing `.env.example` file. You can simply copy it using `cp .env.example .env` command.
 3. Generate `APP_KEY` for your application through laravel app key generator `php artisan key:generate`
 4. Then run `composer install` command to install all the dependencies of this application.
-5. Create sqlite database and run already defined database migrations and seeders. `php artisan migrate` will do that task for you.
+5. Create sqlite database and run already defined database migrations and seeders. `php artisan migrate --seed` will run all the migrations and seeders in same command.
 6. As the last step use `php artisan serve` command run your application on PHP development server. You can also run this application locally using xampp local server.
 
 ## How to do API testing with postman
 
 _This API part is developed using Laravel Sanctum package, it provides a lightweight authentication system for APIs_
-
-> Postman collection and environment variable files are placed inside `postman` directory.
 
 1. Open your postman web app and postman client agent for local testing.
 2. Then click on `collection` tab at the left panel and click on `import` button to import the the postman collection file `Pharmacy API.postman_collection.json`.
