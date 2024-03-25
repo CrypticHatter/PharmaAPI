@@ -35,7 +35,7 @@ _This API part is developed using Laravel Sanctum package, it provides a lightwe
               password: password
 ```
 
-5. When you login using above credentials, the api will return a token.
+5. When you login using above credentials, the loginendpoint will return a user token. You should add that token value to the `user_token` environmental variable.
 6. Then you can access other endpoints of the app using that token and permissions related to the user role.
 
 ## License
